@@ -19,7 +19,7 @@ class DaoSale:
     @classmethod
     def save(cls, sale: Sale):
         with open('sales.txt', 'a') as file:
-            file.writelines(f'{sale.itens_sold.name} | {sale.itens_sold.price} | {sale.itens_sold.category} | {sale.salesman} | {sale.buyer} | str({sale.quantity_sould}) | {sale.date}\n')
+            file.writelines(f'{sale.itens_sold.name}|{sale.itens_sold.price}|{sale.itens_sold.category}|{sale.salesman}|{sale.buyer}|{str(sale.quantity_sould)}|{sale.date}\n')
 
     @classmethod
     def read(cls):
@@ -32,9 +32,9 @@ class DaoSale:
 
 class DaoStock:
     @classmethod
-    def save(cls, product: Product, quantify):
+    def save(cls, product: Product, quantity):
         with open('stocks.txt', 'a') as file:
-            file.writelines(f'{product.name} | {product.price} | {product.category} | {str(quantify)}\n')
+            file.writelines(f'{product.name}|{product.price}|{product.category}|{str(quantity)}\n')
 
     @classmethod
     def read(cls):
@@ -50,7 +50,7 @@ class DaoProvider:
     @classmethod
     def save(cls, provider: Provider):
         with open('providers.txt', 'a') as file:
-            file.writelines(f'{provider.name} | {provider.cnpj} | {provider.phone} | {provider.category}\n')
+            file.writelines(f'{provider.name}|{provider.cnpj}|{provider.phone}|{provider.category}\n')
 
     @classmethod
     def read(cls):
@@ -66,7 +66,7 @@ class DarPerson:
     @classmethod
     def save(cls, person: Person):
         with open('clientes.txt', 'a') as file:
-            file.writelines(f'{person.name} | {person.phone} | {person.cpf} | {person.email} | {person.endereco}\n')
+            file.writelines(f'{person.name}|{person.phone}|{person.cpf}|{person.email}|{person.address}\n')
 
     @classmethod
     def read(cls):
@@ -82,7 +82,7 @@ class DaeEmployee:
     @classmethod
     def save(cls, employe: Employee):
         with open('employes.txt', 'a') as file:
-            file.writelines(f'{employe.clt} | {employe.name} | {employe.phone} | {employe.cpf} | {employe.email} | {employe.address}\n')
+            file.writelines(f'{employe.clt}|{employe.name}|{employe.phone}|{employe.cpf}|{employe.email}|{employe.address}\n')
 
     def read(cls):
         with open('employes.txt', 'r') as file:

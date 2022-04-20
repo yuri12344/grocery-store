@@ -1,0 +1,6 @@
+maca|10|fruta|João|Maria|2|19/04/2022
+maca|10|fruta|João|Maria|2|19/04/2022
+banana|10|fruta|João|Maria|2|19/04/2022
+banana|10|fruta|João|Maria|2|19/04/2022
+banana|10|fruta|João|Maria|2|19/04/2022
+banana|10|fruta|João|Maria|2|19/04/2022
